@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Scanner Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="body">
+        <div class="hed">
+            <h1><<< Document Scanner >>></h1>
+        </div>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="file">Upload or Capture Image :</label>
+            <input class="input" type="file" name="file" id="file" accept="image/*">
+            <input class="btn" type="submit" value="Process Image">
+        </form>
+    </div>
+</body>
+</html>
